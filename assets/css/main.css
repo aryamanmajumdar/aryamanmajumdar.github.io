@@ -1,16 +1,50 @@
 #header {
     text-align: center;
+    color: white;
+    font-family: 'Segoe UI';
+    padding: 20% 0 10% 0;
 
 }
 
 #one {
     text-align: center;
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #two {
     text-align: center;
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #four {
     text-align: center;
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: rgba(255,255,255,0.9);
+    margin: 10% 33%;
+    padding: 1%;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.6);
+}
+
+
+.content {
+    
+    padding: 10%;
+}
+
+.is-preload {
+    background-image: url('../images/intro-bg.jpg');
+    background-position: top left;
+
+}
+
+.responsive {
+    width: 80%;
+    height: auto;
+    margin: 10% 0 0 0;
 }
