@@ -60,6 +60,13 @@ a:hover {
 
 }
 
+.icons-grid {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+
 .ul-edu li {
     list-style-image: url('../images/hat.png');
 }
