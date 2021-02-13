@@ -227,9 +227,7 @@ a:hover {
     }
 
     li.navbarli {
-        float: left;
-        margin-left: 8%;
-        margin-right: auto;
+        margin: auto;
     }
 
     li.navbarli a {
