@@ -126,8 +126,14 @@ a:hover {
     padding: 1% 1% 4.5% 1%;
 }
 
+.content_2 {
+}
+
 .container_3 {
     padding: 1% 1% 5% 1%;
+}
+
+.content_3 {
 }
 
 
@@ -196,8 +202,8 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class="container"] {
-        margin: 10% 0;
+    .container {
+        margin: 0% 0%;
     }
 }
 
