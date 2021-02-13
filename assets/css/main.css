@@ -55,6 +55,7 @@ li.navbarli {
 /* Change the link color to #111 (black) on hover */
 li.navbarli a:hover {
     color: #555;
+    cursor: pointer;
 }
 
 #all {
@@ -141,6 +142,7 @@ a:hover {
 
 
 .content {
+    font-family: 'Segoe UI';
     position: relative;
     padding: 2%;
 }
