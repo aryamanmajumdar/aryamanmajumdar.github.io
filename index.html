@@ -29,7 +29,7 @@
 		<section id="header">
 			<header class="major">
 				<h1>Aryaman Majumdar</h1>
-				<p>UI/UX designer and wannabe Psychologist</p>
+				<p id="changingtext">Psychometrics</p>
 			</header>
 		</section>
 
@@ -165,7 +165,25 @@
                 $([document.documentElement, document.body]).animate({
                     scrollTop: $(".container_3").offset().top
                 }, 1300);
-            });
+			});
+
+			/*Array and counter declaration*/
+            var cars = ["Cognition", "UI/UX", "Research", "Psychometrics"];
+			var current = 0;
+
+			/*Text change function declaration*/
+			function textChange() {
+				if (current == cars.length) {
+					current = 0;
+				}
+
+				$('#changingtext').text(cars[current]);
+				current++;
+			}
+
+			/*Calling the text change function via setInterval function*/
+			setInterval(function () { textChange() }, 2000);
+
 		</script>
 
 	</body>

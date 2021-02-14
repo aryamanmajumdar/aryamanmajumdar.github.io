@@ -20,7 +20,7 @@ ul.navbarul{
     position:relative;
     list-style-type: none;
     margin: 0 0 0 0;
-    padding: 0.5% 0 0.8% 0;
+    padding: 2% 0 2.4% 0;
     overflow: hidden;
     background-color: white;
     position: fixed;
@@ -32,10 +32,11 @@ ul.navbarul{
 
 li.navbarli {
     float: right;
+    display: inline;
 }
 
     li.navbarli a {
-        display: block;
+        
         color: #1d1d1d;
         text-align: center;
         padding: 14px 50px 8px 50px;
@@ -205,6 +206,22 @@ a:hover {
     .container {
         margin: 0% 0%;
     }
+
+    ul.navbarul {
+        display: inline;
+        margin: auto;
+    }
+
+    li.navbarli {
+        float: none;
+        display: inline;
+        margin: auto;
+    }
+
+    li.navbarli a {
+        margin: auto;
+        padding: 14px 10px 8px 10px;
+    }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -212,6 +229,8 @@ a:hover {
     .column_portfolio {
         width: 50%;
     }
+
+
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -221,17 +240,17 @@ a:hover {
     }
 
     ul.navbarul {
-        padding: 0;
-        margin: auto;
-        padding: 0;
+
     }
 
     li.navbarli {
+        float: none;
+        display: inline;
         margin: auto;
     }
 
-    li.navbarli a {
-        margin: auto;
-        padding: 14px 20px 8px 20px;
-    }
+        li.navbarli a {
+            margin: auto;
+            padding: 14px 10px 8px 10px;
+        }
 }
