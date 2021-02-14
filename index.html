@@ -167,22 +167,30 @@
                 }, 1300);
 			});
 
+
+
 			/*Array and counter declaration*/
             var cars = ["Cognition", "UI/UX", "Research", "Psychometrics"];
 			var current = 0;
 
-			/*Text change function declaration*/
-			function textChange() {
-				if (current == cars.length) {
-					current = 0;
-				}
+			function changeText() {
+                if (current == cars.length) {
+                    current = 0;
+                }
 
-				$('#changingtext').text(cars[current]);
+
+                $('#changingtext').text(cars[current]);
 				current++;
+
+
 			}
 
 			/*Calling the text change function via setInterval function*/
-			setInterval(function () { textChange() }, 2000);
+			setInterval(function () {
+				$("#changingtext").fadeOut("slow", function () { changeText(); });
+                $("#changingtext").fadeIn("slow");
+			},
+				2000);
 
 		</script>
 
