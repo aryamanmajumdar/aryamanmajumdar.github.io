@@ -20,7 +20,7 @@ ul.navbarul{
     position:relative;
     list-style-type: none;
     margin: 0 0 0 0;
-    padding: 2% 0 2.4% 0;
+    padding: 2% 0 2% 0;
     overflow: hidden;
     background-color: white;
     position: fixed;
@@ -50,7 +50,7 @@ li.navbarli {
     background-repeat: no-repeat;
     height: 100%;
     padding: 0 10% 2% 10%;
-    margin: 0.5% 0 0 4.5%;
+    margin: 0.5% 0 0 0%;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -163,7 +163,6 @@ a:hover {
 .is-preload {
     background-image: url('../images/intro-bg.jpg');
     background-position: top left;
-
 }
 
 .icons-grid {
