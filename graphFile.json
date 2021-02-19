@@ -4,6 +4,10 @@
 		{"name":"node2","group":2},
 		{"name":"node3","group":2},
 		{"name":"node4","group":3}
+		{"name":"node5","group":3},
+		{"name":"node6","group":3},
+		{"name":"node7","group":3},
+		{"name":"node8","group":3}
 	],
 	"links":[
 		{"source":2,"target":1,"weight":1},
