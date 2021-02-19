@@ -247,7 +247,9 @@
 
                     node.attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; });
                 });
-            });
+			});
+
+            setInterval(function () { force.alpha(0.1); }, 250);
 
 
 
