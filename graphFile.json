@@ -7,7 +7,15 @@
 		{"name":"node5","group":3},
 		{"name":"node6","group":3},
 		{"name":"node7","group":3},
-		{"name":"node8","group":3}
+		{"name":"node8","group":3},
+		{"name":"node9","group":1},
+		{"name":"node10","group":2},
+		{"name":"node11","group":2},
+		{"name":"node12","group":3},
+		{"name":"node13","group":3},
+		{"name":"node14","group":3},
+		{"name":"node15","group":3},
+		{"name":"node16","group":3}
 	],
 	"links":[
 		{"source":2,"target":1,"weight":1},
@@ -17,6 +25,14 @@
 		{"source":6,"target":3,"weight":1},
 		{"source":4,"target":1,"weight":3},
 		{"source":3,"target":5,"weight":1},
-		{"source":6,"target":0,"weight":3}
+		{"source":6,"target":0,"weight":3},
+		{"source":2,"target":3,"weight":1},
+		{"source":5,"target":2,"weight":3},
+		{"source":2,"target":9,"weight":1},
+		{"source":0,"target":15,"weight":3},
+		{"source":0,"target":14,"weight":1},
+		{"source":0,"target":13,"weight":3},
+		{"source":12,"target":11,"weight":1},
+		{"source":11,"target":2,"weight":3}
 	]
 }
