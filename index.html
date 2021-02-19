@@ -28,9 +28,10 @@
 		<!-- Header -->
 		<section id="header">
 			<header class="major">
-				<h1>Aryaman</h1>
-				<p id="changingtext">Psychometrics</p>
-
+				<div class="headertext">
+					<h1>Aryaman</h1>
+					<p id="changingtext">Psychometrics</p>
+				</div>
 				<div id="my_dataviz"></div>
 
 			</header>
@@ -212,7 +213,7 @@
 
             d3.json("graphFile.json", function (json) {
                 force
-                    .nodes(json.nodes)
+                    .nodes(json.nodes) 
                     .links(json.links)
                     .start();
 

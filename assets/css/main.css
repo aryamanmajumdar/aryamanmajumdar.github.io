@@ -87,6 +87,20 @@ li.navbarli a:hover {
 
 }
 
+.major {
+    display: grid;
+}
+
+.headertext {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#my_dataviz {
+    grid-column: 1;
+    grid-row: 1;
+}
+
 #one {
     text-align: center;
     color: dimgray;
