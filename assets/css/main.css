@@ -201,58 +201,68 @@ a:hover {
     margin: auto;
 }
 
+/*d3 graph things*/
+.link {
+    stroke: #aaa;
+}
 
+.node text {
+    stroke: #333;
+}
+
+.node circle {
+    stroke: #fff;
+    stroke-width: 3px;
+    fill: #555;
+}
+
+/*end of d3 graph things*/
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .container {
-        margin: 0% 0%;
-    }
-
-    ul.navbarul {
-        display: inline;
-        margin: auto;
-    }
-
-    li.navbarli {
-        float: none;
-        display: inline;
-        margin: auto;
-    }
-
-    li.navbarli a {
-        margin: auto;
-        padding: 14px 10px 8px 10px;
-    }
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .column_portfolio {
-        width: 50%;
-    }
-
-
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column_portfolio {
-        width: 80%;
-    }
-
-    ul.navbarul {
-
-    }
-
-    li.navbarli {
-        float: none;
-        display: inline;
-        margin: auto;
-    }
-
-        li.navbarli a {
-            margin: auto;
-            padding: 14px 10px 8px 10px;
+        /* For mobile phones: */
+        .container {
+            margin: 0% 0%;
         }
-}
+
+        ul.navbarul {
+            display: inline;
+            margin: auto;
+        }
+
+        li.navbarli {
+            float: none;
+            display: inline;
+            margin: auto;
+        }
+
+            li.navbarli a {
+                margin: auto;
+                padding: 14px 10px 8px 10px;
+            }
+    }
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+        .column_portfolio {
+            width: 50%;
+        }
+    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column_portfolio {
+            width: 80%;
+        }
+
+        ul.navbarul {
+        }
+
+        li.navbarli {
+            float: none;
+            display: inline;
+            margin: auto;
+        }
+
+            li.navbarli a {
+                margin: auto;
+                padding: 14px 10px 8px 10px;
+            }
+    }
