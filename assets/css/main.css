@@ -211,7 +211,7 @@ a:hover {
 }
 
 .node circle {
-    stroke: #fff;
+    stroke: #000;
     stroke-width: 3px;
     fill: #555;
 }
