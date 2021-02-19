@@ -207,7 +207,7 @@ a:hover {
 }
 
 .node text {
-    stroke: #333;
+    display: none;
 }
 
 .node circle {
