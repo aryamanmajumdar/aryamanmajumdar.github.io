@@ -211,8 +211,6 @@ a:hover {
 }
 
 .node circle {
-    stroke: #000;
-    stroke-width: 3px;
 }
 
 /*end of d3 graph things*/
