@@ -226,7 +226,10 @@
                     .data(json.nodes)
                     .enter().append("g")
                     .attr("class", "node")
-                    .call(force.drag);
+					.call(force.drag)
+                    .style("fill", function () {
+                        return "hsl(" + Math.random() * 360 + ",100%,50%)";
+                    });
 
                 node.append("circle")
                     .attr("r", "5");
@@ -246,10 +249,6 @@
                 });
             });
 
-			/*randomizing color of nodes*/
-            var colors = ['#ff0000', '#00ff00', '#0000ff'];
-            var random_color = colors[Math.floor(Math.random() * colors.length)];
-            $('.node').css('fill', random_color);
 
 
 
