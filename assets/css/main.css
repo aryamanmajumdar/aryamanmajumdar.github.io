@@ -211,6 +211,7 @@ a:hover {
 }
 
 .node circle {
+    fill-opacity: 0.6;
 }
 
 /*end of d3 graph things*/
