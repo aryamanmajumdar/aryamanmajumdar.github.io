@@ -219,8 +219,8 @@
 				var link = svg.selectAll(".link")
 					.data(json.links)
 					.enter().append("line")
-					.attr("class", "link")
-                   .style("stroke-width", function (d) { return Math.sqrt(d.weight); });
+					.attr("class", "link");
+                   /*.style("stroke-width", function (d) { return Math.sqrt(d.weight); });*/
 
                 var node = svg.selectAll(".node")
                     .data(json.nodes)
