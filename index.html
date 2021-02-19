@@ -210,7 +210,7 @@
                 .charge(-100)
                 .size([width, height]);
 
-            d3.json("graph.json", function (json) {
+            d3.json("graphFile.json", function (json) {
                 force
                     .nodes(json.nodes)
                     .links(json.links)
@@ -220,7 +220,7 @@
 					.data(json.links)
 					.enter().append("line")
 					.attr("class", "link");
-                   /* .style("stroke-width", function (d) { return Math.sqrt(d.weight); });*/
+                   .style("stroke-width", function (d) { return Math.sqrt(d.weight); });
 
                 var node = svg.selectAll(".node")
                     .data(json.nodes)
