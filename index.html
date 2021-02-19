@@ -173,7 +173,7 @@
 
 
 			/*Array and counter declaration*/
-            var cars = ["Cognition", "UI/UX", "Research", "Psychometrics"];
+            var cars = ["Computation", "Economics", "UI/UX", "Research", "Psychometrics"];
 			var current = 0;
 
 			function changeText() {
@@ -247,6 +247,8 @@
             });
 
 			/*randomizing color of nodes*/
+            var colors = ['#ff0000', '#00ff00', '#0000ff'];
+            var random_color = colors[Math.floor(Math.random() * colors.length)];
             $('.node circle').css('fill', random_color);
 
 
