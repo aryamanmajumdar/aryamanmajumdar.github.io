@@ -98,6 +98,7 @@ li.navbarli a:hover {
 
     padding: 15% 0 20% 0;
     z-index: auto;
+    background-color: white;
 }
 
 #my_dataviz {
