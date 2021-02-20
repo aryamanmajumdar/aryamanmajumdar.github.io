@@ -129,6 +129,6 @@
 		{"source":60,"target":61,"weight":3},
 		{"source":61,"target":62,"weight":1},
 		{"source":62,"target":63,"weight":3},
-		{"source":63,"target":0,"weight":1},
+		{"source":63,"target":0,"weight":1}
 	]
 }
