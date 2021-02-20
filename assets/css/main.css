@@ -16,8 +16,8 @@ body {
 
 
 .is-preload {
-    background-image: url('../images/intro-bg.jpg'), url('../images/intro-bg2.jpg');*
-   /*background-color: white;*/ 
+    /*background-image: url('../images/intro-bg.jpg'), url('../images/intro-bg2.jpg');*/
+    background-color: white;
     background-position: top left;
 }
 
@@ -99,7 +99,7 @@ li.navbarli a:hover {
     margin: 20% auto 20% auto;
     z-index: auto;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 6px 6px rgba(0,0,0,0.6);
+    box-shadow: 0 0 10px 20px rgba(255,255,255,0.6);
 }
 
 #my_dataviz {
