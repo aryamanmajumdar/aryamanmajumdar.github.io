@@ -95,6 +95,8 @@ li.navbarli a:hover {
     width: 100%;
     grid-column: 1;
     grid-row: 1;
+
+    padding: 20% 0 20% 0;
 }
 
 #my_dataviz {
