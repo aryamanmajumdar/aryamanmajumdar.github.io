@@ -97,11 +97,15 @@ li.navbarli a:hover {
     grid-row: 1;
 
     padding: 20% 0 20% 0;
+    z-index: auto;
 }
 
 #my_dataviz {
     grid-column: 1;
     grid-row: 1;
+
+    padding: 10% 0 10% 0;
+    z-index: -1;
 }
 
 #one {
