@@ -286,15 +286,14 @@ a:hover {
         }
 
         ul.navbarul {
-            position: relative;
-            width: 60%;
+            width: 100%;
             margin: auto auto;
         }
 
         li.navbarli {
-            width: 30%;
-            padding: auto;
-            margin: auto auto auto auto;;
+            float: right;
+            display: inline;
+            margin: auto 2% auto 2%;
         }
 
             li.navbarli a {
