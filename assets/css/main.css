@@ -18,7 +18,7 @@ body {
 .is-preload {
     /*background-image: url('../images/intro-bg3.jpg');*/
     background-color: white;
-    background-position: top left;
+    margin: 0;
     width: 100%;
 }
 
@@ -101,7 +101,7 @@ li.navbarli a:hover {
 }
 
 .headertext {
-    width: 30%;
+    width: 60%;
     height: 20%;
     grid-column: 1;
     grid-row: 1;
@@ -117,6 +117,7 @@ li.navbarli a:hover {
 
     padding: 3% 0 5% 0;
     z-index: -1;
+
 }
 
 #one {

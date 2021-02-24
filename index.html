@@ -181,13 +181,14 @@
 				2500);
 
 
+
 			/*d3*/
 			var width = screen.width - (screen.width/10),
 				height = 700;
 
             var svg = d3.select("#my_dataviz").append("svg")
-                .attr("width", width)
-                .attr("height", height);
+			.attr("viewBox", "0 0 1350 800")
+  			.attr("preserveAspectRatio", "xMinYMin meet");
 
             var force = d3.layout.force()
                 .gravity(.05)
@@ -240,8 +241,6 @@
 
 			drawChart();
 			
- 
-
 
 			/*make graph nodes constantly moving*/
 			setInterval(function () { force.alpha(0.1); }, 250);
