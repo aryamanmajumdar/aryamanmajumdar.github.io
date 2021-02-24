@@ -288,12 +288,24 @@ a:hover {
         ul.navbarul {
             width: 100%;
             margin: auto auto;
+            display: flex;
+            flex-direction: row;
         }
 
         li.navbarli {
-            float: right;
-            display: inline;
-            margin: auto 2% auto 2%;
+            margin: auto;
+        }
+
+        li.navbarli:first-child {
+            order: 3;
+        }
+
+        li.navbarli:nth-child(2) {
+            order: 2;
+        }
+
+        li.navbarli:nth-child(3) {
+            order: 1;
         }
 
             li.navbarli a {
