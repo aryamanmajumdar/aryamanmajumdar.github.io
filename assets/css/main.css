@@ -120,6 +120,21 @@ li.navbarli a:hover {
 
 }
 
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 0;
+}
+
 #one {
     text-align: center;
     color: dimgray;
@@ -273,7 +288,39 @@ a:hover {
                 margin: auto;
                 padding: 14px 10px 8px 10px;
             }
+
+        
+
     }
+
+    @media (min-width: 600px) and (max-width: 768px){
+        .headertext {
+            width: 30%;
+            height: 30%;
+            grid-column: 1;
+            grid-row: 1;
+            margin: 20% auto 20% auto;
+            z-index: auto;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0 0 40px 40px rgba(255,255,255,1);
+        }
+
+        .svg-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+            vertical-align: top;
+            overflow: hidden;
+        }
+        .svg-content {
+            display: inline-block;
+            position: absolute;
+            top: 10%;
+            left: 0;
+        }
+    }
+
     /* Responsive layout - makes a two column-layout instead of four columns */
     @media screen and (max-width: 900px) {
         .column_portfolio {
@@ -313,4 +360,34 @@ a:hover {
                 margin: auto;
                 padding: 14px auto 8px auto;
             }
+
+            .headertext {
+                width: auto;
+                height: auto;
+                grid-column: 1;
+                grid-row: 1;
+                margin: 20% auto 20% auto;
+                z-index: auto;
+                background-color: rgba(255, 255, 255, 1);
+                box-shadow: 0 0 5px 5px rgba(255,255,255,1);
+            }
+
+            
+        .svg-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+            vertical-align: top;
+            overflow: hidden;
+        }
+        .svg-content {
+            display: inline-block;
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            width: 500px;
+            height: 500px;
+        }
+
     }

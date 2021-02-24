@@ -31,7 +31,7 @@
 					<h1>Aryaman</h1>
 					<p id="changingtext">Psychometrics</p>
 				</div>
-				<div id="my_dataviz"></div>
+				<div id="my_dataviz" class="svg-container"></div>
 
 			</div>
 		</section>
@@ -188,7 +188,8 @@
 
             var svg = d3.select("#my_dataviz").append("svg")
 			.attr("viewBox", "0 0 1350 800")
-  			.attr("preserveAspectRatio", "xMinYMin meet");
+  			.attr("preserveAspectRatio", "xMinYMin meet")
+			.classed("svg-content", true);
 
             var force = d3.layout.force()
                 .gravity(.05)
