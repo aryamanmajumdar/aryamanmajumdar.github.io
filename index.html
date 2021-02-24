@@ -15,26 +15,25 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 	<body class="is-preload">
-
 		<div class="navbar">
 			<ul class="navbarul">
 				<li class="navbarli"><a id="educationbutton">Education</a></li>
 				<li class="navbarli"><a id="portfoliobutton">Portfolio</a></li>
 				<li class="navbarli"><a id="aboutbutton">About</a></li>
-				<li id="homepagebutton"><a id="homepagebutton" href="index.html"></a></li>
+				
 			</ul>
 		</div>
 
 		<!-- Header -->
 		<section id="header">
-			<header class="major">
+			<div class="major">
 				<div class="headertext">
 					<h1>Aryaman</h1>
 					<p id="changingtext">Psychometrics</p>
 				</div>
 				<div id="my_dataviz"></div>
 
-			</header>
+			</div>
 		</section>
 
 		<!-- One -->
@@ -45,7 +44,7 @@
 					<header class="major">
 						<h2>About me</h2>
 					</header>
-					<p>I'm a UI/UX designer, Psychology student, and I know a couple of things about human behavior and cognition (humility is a virtue).</p>
+					<p>I'm a UI/UX designer, Psychology student, and I know a couple of things about human behavior and cognition.</p>
 				</div>
 				<!--<a href="#two" class="goto-next scrolly">Next</a> -->
 			</div>
@@ -54,27 +53,12 @@
 		<!-- Two -->
 		<section id="two" class="main special">
 			<div class="container container_2">
-				<span class="image fit primary"><img src="assets/images/flower.jpg" alt="" /></span>
-				<div class="content content_2">
 					<header class="major">
 						<h2>Portfolio</h2>
 					</header>
-					<div class="row_portfolio">
 						<div class="column_portfolio column_portfolio_1">
-							<h3 class="portfolio_subsection">The Usual Things</h3>
+							<h3 class="portfolio_subsection"></h3>
 						</div>
-
-						<div class="column_portfolio column_portfolio_2">
-							<h3 class="portfolio_subsection">Kind of out there</h3>
-						</div>
-
-						<div class="column_portfolio column_portfolio_3">
-							<h3 class="portfolio_subsection">Totally nutso</h3>
-						</div>
-
-					</div>
-
-				</div>
 				<!-- <a href="#three" class="goto-next scrolly">Next</a> -->
 			</div>
 		</section>
@@ -210,8 +194,9 @@
                 .distance(100)
                 .charge(-100)
                 .size([width, height]);
-
-            d3.json("graphFile.json", function (json) {
+			
+			function drawChart(){
+				d3.json("graphFile.json", function (json) {
                 force
                     .nodes(json.nodes) 
                     .links(json.links)
@@ -223,17 +208,17 @@
 					.attr("class", "link")
                     .style("stroke-width", function (d) { return Math.sqrt(d.weight); });
 
-                var node = svg.selectAll(".node")
-                    .data(json.nodes)
-                    .enter().append("g")
-                    .attr("class", "node")
+				var node = svg.selectAll(".node")
+					.data(json.nodes)
+					.enter().append("g")
+					.attr("class", "node")
 					.call(force.drag)
-                    .style("fill", function () {
-                        return "hsl(" + Math.random() * 360 + ",100%,50%)";
-                    });
+					.style("fill", function () {
+						return "hsl(" + Math.random() * 360 + ",100%,50%)";
+					});
 
-                node.append("circle")
-                    .attr("r", "5");
+				node.append("circle")
+                    .attr("r", "7");
 
                 node.append("text")
                     .attr("dx", 12)
@@ -247,23 +232,21 @@
                         .attr("y2", function (d) { return d.target.y; });
 
                     node.attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; });
-                });
+				});
+
+
 			});
+			}
+
+			drawChart();
+			
+ 
+
 
 			/*make graph nodes constantly moving*/
 			setInterval(function () { force.alpha(0.1); }, 250);
 
-            function mouseover() {
-                d3.select(this).select("circle").transition()
-                    .duration(750)
-                    .attr("r", 16);
-			}
 
-            function mouseout() {
-                d3.select(this).select("circle").transition()
-                    .duration(750)
-                    .attr("r", 8);
-            }
 
 
 

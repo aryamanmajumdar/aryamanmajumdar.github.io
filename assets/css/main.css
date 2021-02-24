@@ -16,15 +16,16 @@ body {
 
 
 .is-preload {
-    /*background-image: url('../images/intro-bg.jpg'), url('../images/intro-bg2.jpg');*/
+    /*background-image: url('../images/intro-bg3.jpg');*/
     background-color: white;
     background-position: top left;
+    width: 100%;
 }
 
 /*The next six stylings are for the navbar*/
 
 ul.navbarul{
-    position:relative;
+    position: relative;
     list-style-type: none;
     margin: 0 0 0 0;
     padding: 1% 0 1% 0;
@@ -40,16 +41,22 @@ ul.navbarul{
 li.navbarli {
     float: right;
     display: inline;
+    margin: auto 5% auto 5%;
 }
+
+
+
 
     li.navbarli a {
         
         color: #1d1d1d;
         text-align: center;
-        padding: 8px 50px 8px 50px;
+        padding: 8px 0% 8px 0%;
         text-decoration: none;
         font-family: Montserrat;
     }
+
+
 
 #homepagebutton {
     float: left;
@@ -84,11 +91,13 @@ li.navbarli a:hover {
     font-family: 'Segoe UI';
     font-size: 150%;
     padding: 0 0 0 0;
+    width: 100%;
 
 }
 
 .major {
     display: grid;
+    width: 100%;
 }
 
 .headertext {
@@ -99,14 +108,14 @@ li.navbarli a:hover {
     margin: 20% auto 20% auto;
     z-index: auto;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 10px 20px rgba(255,255,255,0.6);
+    box-shadow: 0 0 40px 40px rgba(255,255,255,1);
 }
 
 #my_dataviz {
     grid-column: 1;
     grid-row: 1;
 
-    padding: 3% 0 10% 0;
+    padding: 3% 0 5% 0;
     z-index: -1;
 }
 
@@ -154,7 +163,8 @@ a:hover {
 }
 
 .container_2 {
-    padding: 1% 1% 4.5% 1%;
+    padding: 1% 1% 7% 1%;
+    height: 900px;
 }
 
 .content_2 {
@@ -200,10 +210,10 @@ a:hover {
 .column_portfolio {
     position:relative;
     display: inline-block;
-    width: 18%;
+    width: 70%;
     height: 20%;
     padding: 2% 5% 50% 5%;
-    margin: 2% 2% 6% 2%;
+    margin: auto;
     background-color: white;
     box-shadow: 0px 48px 43px rgba(160, 167, 177, 0.6);
     z-index: 1;
@@ -251,10 +261,12 @@ a:hover {
         }
 
         li.navbarli {
-            float: none;
+            float: right;
             display: inline;
-            margin: auto;
+            margin: auto 5% auto 5%;
         }
+
+
 
             li.navbarli a {
                 margin: auto;
@@ -274,16 +286,19 @@ a:hover {
         }
 
         ul.navbarul {
+            position: relative;
+            width: 60%;
+            margin: auto auto;
         }
 
         li.navbarli {
-            float: none;
-            display: inline;
-            margin: auto;
+            width: 30%;
+            padding: auto;
+            margin: auto auto auto auto;;
         }
 
             li.navbarli a {
                 margin: auto;
-                padding: 14px 10px 8px 10px;
+                padding: 14px auto 8px auto;
             }
     }
