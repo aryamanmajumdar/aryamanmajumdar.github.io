@@ -369,6 +369,11 @@ a:hover {
                 padding: 14px auto 8px auto;
             }
 
+            #header{
+                padding-top: 40%;
+                padding-bottom: 40%;
+            }
+
             .headertext {
                 width: auto;
                 height: auto;
