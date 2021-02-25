@@ -88,7 +88,7 @@ li.navbarli a:hover {
 #header {
     text-align: center;
     color: darkslategray;
-    font-family: 'Segoe UI';
+    font-family: 'ADAM.CG PRO';
     font-size: 150%;
     padding: 0 0 0 0;
     width: 100%;
@@ -305,6 +305,14 @@ a:hover {
             box-shadow: 0 0 40px 40px rgba(255,255,255,1);
         }
 
+        #my_dataviz {
+            grid-column: 1;
+            grid-row: 1;
+        
+            padding: 3% 0 5% 0;
+            z-index: -1;
+        
+        }
         .svg-container {
             display: inline-block;
             position: relative;
@@ -373,6 +381,15 @@ a:hover {
             }
 
             
+            #my_dataviz {
+                grid-column: 1;
+                grid-row: 1;
+            
+                padding: 0;
+                z-index: -1;
+            
+            }
+            
         .svg-container {
             display: inline-block;
             position: relative;
@@ -384,9 +401,8 @@ a:hover {
         .svg-content {
             display: inline-block;
             position: absolute;
-            top: 15%;
-            left: 5%;
-
+            top: 0%;
+            left: 0%;
         }
 
     }
