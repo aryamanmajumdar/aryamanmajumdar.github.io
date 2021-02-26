@@ -252,6 +252,7 @@ a:hover {
 }
 
 .column_portfolio .img:nth-child(2n+3){
+    grid-column-start: span 2;
     grid-row-start: span 2;
 }
 
