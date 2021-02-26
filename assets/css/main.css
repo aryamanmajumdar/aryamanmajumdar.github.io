@@ -180,7 +180,7 @@ a:hover {
 
 .container_2 {
     padding: 1% 1% 7% 1%;
-    height: 900px;
+    height: 100%;
 }
 
 .content_2 {
@@ -225,19 +225,51 @@ a:hover {
 
 .column_portfolio {
     position:relative;
-    display: inline-block;
     width: 70%;
-    height: 20%;
-    padding: 2% 5% 50% 5%;
+    height: auto;
+    padding: 2% 5% 20% 5%;
     margin: auto;
     background-color: white;
     box-shadow: 0px 48px 43px rgba(160, 167, 177, 0.6);
     z-index: 1;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vmin;
+    grid-auto-flow: dense;
     /*box-shadow: 0 20px 20px rgba(0,0,0,0.4);*/
 }
 
-.portfolio_subsection 
-{
+.column_portfolio .img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.column_portfolio .img:first-child{
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.column_portfolio .img:nth-child(2n+3){
+    grid-row-start: span 2;
+}
+
+.column_portfolio .img:nth-child(2n){
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+.column_portfolio .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(1);
+    transition: 0.3s ease-in-out;
+}
+
+.column_portfolio .img:hover img{
+    filter: brightness(1);
 }
 
 
