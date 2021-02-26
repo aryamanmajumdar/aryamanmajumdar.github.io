@@ -269,9 +269,9 @@ a:hover {
     transition: 0.3s ease-in-out;
 }
 
-.column_portfolio .img:hover img{
+/*.column_portfolio .img:hover img{
     filter: brightness(1.2);
-}
+}*/
 
 .column_portfolio:hover .img:not(:hover) img{
     filter: brightness(0.3);
