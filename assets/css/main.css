@@ -270,7 +270,7 @@ a:hover {
 }
 
 .column_portfolio .img:hover img{
-    filter: brightness(1);
+    filter: brightness(1.2);
 }
 
 
