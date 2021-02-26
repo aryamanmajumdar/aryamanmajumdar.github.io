@@ -88,7 +88,7 @@ li.navbarli a:hover {
 #header {
     text-align: center;
     color: darkslategray;
-    font-family: 'Josefin Sans', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 150%;
     padding: 0 0 0 0;
     width: 100%;
@@ -137,20 +137,20 @@ li.navbarli a:hover {
 
 #one {
     text-align: center;
-    color: dimgray;
-    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #two {
     text-align: center;
-    color: dimgray;
-    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #four {
     text-align: center;
-    color: dimgray;
-    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #footer {
@@ -205,7 +205,7 @@ a:hover {
 
 
 .content {
-    font-family: 'Segoe UI';
+    font-family: 'Josefin Sans', sans-serif;
     position: relative;
     padding: 2%;
 }
