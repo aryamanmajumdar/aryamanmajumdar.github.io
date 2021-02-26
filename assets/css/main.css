@@ -273,6 +273,10 @@ a:hover {
     filter: brightness(1.2);
 }
 
+.column_portfolio .img:hover ~ .img img{
+    filter: brightness(0.4);
+}
+
 
 .ul-edu li {
     list-style-image: url('../images/hat.png');
