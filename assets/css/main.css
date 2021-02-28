@@ -187,16 +187,6 @@ a:hover {
     padding: 1% 1% 1% 1%;
 }
 
-.content_2 {
-}
-
-.container_3 {
-    padding: 1% 1% 5% 1%;
-}
-
-.content_3 {
-}
-
 
 
 
@@ -299,6 +289,17 @@ a:hover {
     margin: auto;
 }
 
+.column_portfolio:last-child{
+    box-shadow: 0px 24px 21px rgba(160, 167, 177, 0.6);
+}
+
+.container_3 h4{
+    margin: auto;
+}
+
+.container_3 p{
+    margin: auto;
+}
 
 .ul-edu li {
     list-style-image: url('../images/hat.png');
@@ -473,7 +474,8 @@ a:hover {
         }
 
         .container_2 {
-            padding: 1% 1% 20% 1%;
+            padding: 1% 1% 2% 1%;
+            z-index: 10;
         }
 
     }
