@@ -462,6 +462,7 @@ a:hover {
             }
             
         .svg-container {
+            
             display: inline-block;
             position: relative;
             width: 100%;
@@ -475,7 +476,7 @@ a:hover {
             width: 100%;
             height: 100%;
             top: 0%;
-            left: 28%;
+            left: 0%;
         }
 
         .container_2 {
