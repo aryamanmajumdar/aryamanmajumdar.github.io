@@ -267,6 +267,7 @@ a:hover {
     grid-column-start: span 2;
 }
 
+
 .column_portfolio .img img{
     height: 100%;
     width: 100%;
@@ -281,6 +282,15 @@ a:hover {
 
 .column_portfolio:hover .img:not(:hover) img{
     filter: brightness(0.3);
+}
+
+.column_portfolio_3 {
+    grid-template-columns: auto;
+    height: auto;
+}
+
+.column_portfolio_3 .vid{
+    margin: auto;
 }
 
 
