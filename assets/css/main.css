@@ -188,7 +188,7 @@ a:hover {
 }
 
 .container_2 .major h2{
-    margin-bottom: 10%;
+    margin-bottom: 4%;
 }
 
 
@@ -339,6 +339,7 @@ a:hover {
     color: darkslategray;
     cursor: pointer;
     padding: 18px;
+    margin: 2px auto 2px auto;
     width: 100%;
     border: none;
     text-align: center;
@@ -504,6 +505,10 @@ a:hover {
         .container_2 {
             padding: 1% 1% 2% 1%;
             z-index: 10;
+        }
+
+        .container_2 .major h2{
+            margin-bottom: 10%;
         }
 
     }
