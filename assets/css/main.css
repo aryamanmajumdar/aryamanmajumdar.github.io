@@ -503,7 +503,7 @@ a:hover {
             #my_dataviz {
                 grid-column: 1;
                 grid-row: 1;
-            
+                
                 padding: 0;
                 z-index: -1;
             
@@ -539,6 +539,10 @@ a:hover {
             font-weight: bold;
             display: inline-block;
             outline: none;
+
+            animation: fadeInAnimation ease 20s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
           }
 
           .downbutton:hover{
