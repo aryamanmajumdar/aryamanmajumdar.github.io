@@ -304,16 +304,36 @@ a:hover {
     padding-bottom: 7%;
 }
 
+.container_3 .col-md-7{
+    width: 80%;
+}
+
+.container_3 ul{
+    width: 100%;
+    padding-left: 0;
+}
+
+.container_3 ul li{
+    width: 100%;
+}
+
+.container_3 ul li .description{
+    width: 100%;
+}
+
 .container_3 h4{
+    width: 90%;
     margin: auto;
 }
 
 .container_3 p{
+    width: 90%;
     margin: auto;
+    padding-bottom: 10%;
 }
 
 .ul-edu li {
-    list-style-image: url('../images/hat.png');
+    list-style-type: none;
 }
 
 .col-md-7 {
