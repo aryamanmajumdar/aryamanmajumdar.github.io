@@ -381,6 +381,7 @@ a:hover {
     grid-column-start: span 4;
     grid-row-start: span 1;
     margin: auto;
+    outline: none;
   }
 
 /*end of d3 graph things*/
