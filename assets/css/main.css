@@ -377,6 +377,12 @@ a:hover {
     background-color: #ccc;
   }
 
+  .audio{
+    grid-column-start: span 4;
+    grid-row-start: span 1;
+    margin: auto;
+  }
+
 /*end of d3 graph things*/
 
 @media only screen and (max-width: 768px) {

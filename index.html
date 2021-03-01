@@ -48,7 +48,7 @@
 					<header class="major">
 						<h2>About me</h2>
 					</header>
-					<p>I'm a designer, content creator, student of Psychology and Computation — and I know a couple of things about human behavior and cognition.</p>
+					<p>I'm a designer, content creator, student of Psychology and Computation — and I know a couple of things about human behavior and cognition. <br><br>I'm also a wannabe voice actor.</p>
 				</div>
 				<!--<a href="#two" class="goto-next scrolly">Next</a> -->
 			</div>
@@ -112,6 +112,26 @@
 							<div class="img">
 								<img src="assets/images/33.gif"/>
 							</div>
+						</div>
+
+						<button type="button" class="collapsible">Voice samples</button>
+
+						<div class="column_portfolio column_portfolio_4">
+
+							<audio controls class="audio">
+								<source src="assets/sounds/voicesample3.mp3" type="audio/mp3" id="audio_1">
+							  Your browser does not support the audio element.
+							  </audio>
+
+							  <audio controls class="audio">
+								<source src="assets/sounds/voicesample2.mp3" type="audio/mp3" id="audio_2">
+							  Your browser does not support the audio element.
+							  </audio>
+
+							  <audio controls class="audio">
+								<source src="assets/sounds/voicesample1.mp3" type="audio/mp3" id="audio_3">
+							  Your browser does not support the audio element.
+							  </audio>
 						</div>
 
 
@@ -343,6 +363,14 @@
 			});
 			}
 
+			/*Sound script*/
+			$("audio").on("play", function() {
+    		var id = $(this).attr('id');
+
+    		$("audio").not(this).each(function(index, audio) {
+       		audio.pause();
+    		});
+});
 
 		</script>
 
