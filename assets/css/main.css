@@ -326,6 +326,10 @@ a:hover {
     width: 100%;
 }
 
+.container_3 ul li .description p{
+    padding-bottom: 4%;
+}
+
 .container_3 h4{
     width: 90%;
     margin: auto;
@@ -577,6 +581,15 @@ a:hover {
 
         .container_2 .major h2{
             margin-bottom: 10%;
+        }
+
+        .container_3 ul li .description{
+            width: 100%;
+        }
+
+        .container_3 ul li .description p{
+            width: 100%;
+            padding-bottom: 10%;
         }
 
     }
