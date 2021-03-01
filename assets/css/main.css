@@ -187,7 +187,9 @@ a:hover {
     padding: 1% 1% 1% 1%;
 }
 
-
+.container_2 .major h2{
+    margin-bottom: 10%;
+}
 
 
 .responsive {
@@ -227,10 +229,14 @@ a:hover {
     background-color: white;
     box-shadow: 0px 48px 43px rgba(160, 167, 177, 0.6);
     z-index: 1;
-    display: grid;
+    display: none;
     grid-template-columns: auto auto auto auto;
     grid-gap: 2vmin;
     grid-auto-flow: dense;
+
+    max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-out;
     /*box-shadow: 0 20px 20px rgba(0,0,0,0.4);*/
 }
 
@@ -327,6 +333,23 @@ a:hover {
 .node circle {
     fill-opacity: 0.6;
 }
+
+.collapsible {
+    background-color: #eee;
+    color: darkslategray;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    outline: none;
+    font-size: 18px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
 
 /*end of d3 graph things*/
 

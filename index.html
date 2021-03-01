@@ -60,7 +60,9 @@
 						<h2>Portfolio</h2>
 					</header>
 
-					<h3>Content for a text summarization app</h3>
+					<button type="button" class="collapsible">Content for a text summarization app</button>
+
+					<!--<h3>Content for a text summarization app</h3>-->
 						<div class="column_portfolio column_portfolio_1">
 							<div class="img">
 								<img src="assets/images/texplicit_veryfirst_reduced_withoutcentercorr_gif.gif"/>
@@ -87,14 +89,18 @@
 							</div>
 						</div>
 
-						<h3>Teaser for nanotech-based eye color changer</h3>
+						<button type="button" class="collapsible">Teaser for nanotech-based eye color changer</button>
+
+						<!--<h3>Teaser for nanotech-based eye color changer</h3>-->
 
 						<div class="column_portfolio column_portfolio_3">
 
 							<iframe class="vid" src="https://www.youtube.com/embed/nZ0-oj4yh7E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 
-						<h3>Music visualizers</h3>
+						<button type="button" class="collapsible">Music visualizers</button>
+
+						<!--<h3>Music visualizers</h3>-->
 
 						<div class="column_portfolio column_portfolio_2">
 
@@ -311,8 +317,26 @@
 			setInterval(function () { force.alpha(0.1); }, 250);
 
 
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
 
+			for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "grid") {
+				content.style.display = "none";
+				} else {
+				content.style.display = "grid";
+				}
 
+				if (content.style.maxHeight){
+				content.style.maxHeight = null;
+				} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+			}
 
 
 		</script>
