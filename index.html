@@ -32,10 +32,11 @@
 			<div class="major">
 				<div class="headertext">
 					<h1>ARYAMAN</h1>
-					<p id="changingtext">Talent Acquisition/Psychometrics</p>
+					<p id="changingtext">Talent Acq/Psychometrics</p>
 				</div>
 				<div id="my_dataviz" class="svg-container"></div>
 
+				<button type="button" class="downbutton"><p>↓</p></button>
 			</div>
 		</section>
 
@@ -190,6 +191,12 @@
 
 		<script>
 
+				$(".downbutton").click(function () {
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $(".container_1").offset().top
+                }, 1300);
+				});
+
             $("#aboutbutton").click(function () {
                 $([document.documentElement, document.body]).animate({
                     scrollTop: $(".container_1").offset().top
@@ -211,7 +218,7 @@
 
 
 			/*Array and counter declaration*/
-            var cars = ["AI/Computation", "Markets/Economics", "UI/UX", "Talent Acquisition/Psychometrics"];
+            var cars = ["AI/Computation", "Markets/Economics", "UI/UX", "Talent Acq/Psychometrics"];
 			var current = 0;
 
 			function changeText() {
