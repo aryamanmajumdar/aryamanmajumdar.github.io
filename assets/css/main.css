@@ -464,6 +464,17 @@ a:hover {
     }
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
+
+        .is-preload {
+            background-color: white;
+            background-image: url('../images/intro-bg5.jpg');
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
         .column_portfolio {
             width: 80%;
         }
