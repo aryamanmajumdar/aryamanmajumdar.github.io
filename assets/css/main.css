@@ -17,6 +17,7 @@ body {
 
 .is-preload {
     background-color: white;
+    background-image: url('../images/intro-bg5.jpg');
     margin: 0;
     width: 100%;
 }
@@ -29,7 +30,7 @@ ul.navbarul{
     margin: 0 0 0 0;
     padding: 1% 0 1% 0;
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(255,255,255);
     position: fixed;
     top: 0;
     left: 0;
@@ -86,7 +87,7 @@ li.navbarli a:hover {
 
 #header {
     text-align: center;
-    color: darkslategray;
+    color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 150%;
     padding: 0 0 0 0;
@@ -111,11 +112,12 @@ li.navbarli a:hover {
     grid-row: 1;
     margin: 20% auto 20% auto;
     z-index: auto;
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 40px 40px rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 0);
+    /*box-shadow: 0 0 40px 40px rgba(255,255,255,1);*/
 }
 
 #my_dataviz {
+    display: none;
     grid-column: 1;
     grid-row: 1;
 
@@ -425,11 +427,12 @@ a:hover {
             grid-row: 1;
             margin: 20% auto 20% auto;
             z-index: auto;
-            background-color: rgba(255, 255, 255, 1);
-            box-shadow: 0 0 40px 40px rgba(255,255,255,1);
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0 0 40px 40px rgba(255,255,255,0);
         }
 
         #my_dataviz {
+            display: none;
             grid-column: 1;
             grid-row: 1;
         
@@ -506,8 +509,8 @@ a:hover {
                 grid-row: 1;
                 margin: 20% auto 40% auto;
                 z-index: auto;
-                background-color: rgba(255, 255, 255, 1);
-                box-shadow: 0 0 5px 5px rgba(255,255,255,1);
+                background-color: rgba(255, 255, 255, 0);
+                box-shadow: 0 0 5px 5px rgba(255,255,255,0);
             }
 
             
@@ -538,7 +541,7 @@ a:hover {
         }
 
         .downbutton {
-            background-color: darkslategray;
+            background-color: rgb(200,200,200,0.4);
             width: 30%;
             margin: 12% auto;
             border: none;
@@ -557,13 +560,13 @@ a:hover {
           }
 
           .downbutton:hover{
-              background-color: rgb(73, 121, 121);
+              background-color: rgb(73, 121, 121, 0.4);
               cursor: pointer;
               outline: none;
           }
 
           .downbutton:active{
-            background-color: rgb(73, 121, 121);
+            background-color: rgb(73, 121, 121, 0.4);
             cursor: pointer;
             border: none;
             outline: none;
