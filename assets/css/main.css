@@ -571,13 +571,13 @@ a:hover {
           }
 
           .downbutton:hover{
-              background-color: rgb(73, 121, 121, 0.4);
+              background-color: rgba(231, 231, 231, 0.4);
               cursor: pointer;
               outline: none;
           }
 
           .downbutton:active{
-            background-color: rgb(73, 121, 121, 0.4);
+            background-color: rgba(231, 231, 231, 0.4);
             cursor: pointer;
             border: none;
             outline: none;
