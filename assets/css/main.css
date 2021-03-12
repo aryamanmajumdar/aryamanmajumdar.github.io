@@ -372,6 +372,7 @@ a:hover {
     margin: 2px auto 2px auto;
     border: solid darkslategray;
     width: 60%;
+    height: auto;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     outline: none;
