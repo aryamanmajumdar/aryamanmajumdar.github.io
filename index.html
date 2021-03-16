@@ -61,6 +61,22 @@
 						<h2>Portfolio</h2>
 					</header>
 
+					<div class="slideshow_container">
+						<img class="mySlides w3-animate-right" src="assets/images/texplicit_veryfirst_reduced_withoutcentercorr_gif.gif">
+						<img class="mySlides w3-animate-right" src="assets/images/bodhi_final_gif.gif">
+						<img class="mySlides w3-animate-right" src="assets/images/kuube_final_gif.gif">
+
+							<div class="prev" style="width:20%" onclick="plusDivs(-1)">&#10094;</div>
+							<div class="next" style="width:20%" onclick="plusDivs(1)">&#10095;</div>
+
+							<div class="slide_badge_container">
+								<span class="w3-badge demo w3-border" onclick="showDivs(1)">&#9898;</span>
+								<span class="w3-badge demo w3-border" onclick="showDivs(2)">&#9898;</span>
+								<span class="w3-badge demo w3-border" onclick="showDivs(3)">&#9898;</span>
+							</div>
+
+					</div>
+
 					<button type="button" class="collapsible">Content for a text summarization app</button>
 
 					<!--<h3>Content for a text summarization app</h3>-->
@@ -360,7 +376,41 @@
 			/*make graph nodes constantly moving*/
 			setInterval(function () { force.alpha(0.1); }, 250);
 
+			/*Slideshow script*/
 
+			/*Automatic part*/
+			var slideIndex = 0;
+			carousel();
+
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > x.length) {slideIndex = 1}
+			x[slideIndex-1].style.display = "block";
+			setTimeout(carousel, 6000); // Change image every 2 seconds
+			}
+
+			/*Manual part*/
+			function plusDivs(n) {
+			showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length} ;
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex-1].style.display = "block";
+			}
+
+			/*Collapsible script*/
 			var coll = document.getElementsByClassName("collapsible");
 			var i;
 
@@ -381,6 +431,7 @@
 				}
 			});
 			}
+			
 
 			/*Sound script*/
 			$("audio").on("play", function() {
