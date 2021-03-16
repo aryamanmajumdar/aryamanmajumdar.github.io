@@ -398,12 +398,13 @@
 			var i;
 			var x = document.getElementsByClassName("mySlides");
 			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
+				x[i].style.left = "100%";
 			}
 			slideIndex++;
 			if (slideIndex > x.length) {slideIndex = 1}
-			x[slideIndex-1].style.display = "block";
-			setTimeout(carousel, 6000); // Change image every 2 seconds
+			x[slideIndex-1].style.left = "0%";
+			x[slideIndex-2].style.display = "block";
+			setTimeout(carousel, 2000); // Change image every 2 seconds
 			}
 
 			/*Manual part*/
@@ -417,9 +418,9 @@
 			if (n > x.length) {slideIndex = 1}
 			if (n < 1) {slideIndex = x.length} ;
 			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
+				x[i].style.left = "100%";
 			}
-			x[slideIndex-1].style.display = "block";
+			x[slideIndex-1].style.left = "0%";
 			}
 
 			/*Collapsible script*/
@@ -430,10 +431,10 @@
 			coll[i].addEventListener("click", function() {
 				this.classList.toggle("active");
 				var content = this.nextElementSibling;
-				if (content.style.display === "grid") {
+				if (content.style.display === "block") {
 				content.style.display = "none";
 				} else {
-				content.style.display = "grid";
+				content.style.display = "block";
 				}
 
 				if (content.style.maxHeight){
