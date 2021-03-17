@@ -392,7 +392,33 @@
 
 			/*Automatic part*/
 			var slideIndex = 0;
-			carousel();
+			carousel_initial_placement();
+			carousel_movement();
+
+			function carousel_initial_placement(){
+				var x = document.getElementsByClassName("mySlides");
+				for(i = 0; i < x.length; i++){
+					x[i].style.left = (i*100).toString() + "%";
+				}
+			}
+
+			function carousel_movement(){
+				var x = document.getElementsByClassName("mySlides");
+
+				if(x[x.length-1].style.left == "0%"){
+					carousel_initial_placement();
+				}
+				else{
+					for(i = 0; i < x.length; i++){
+						var placement = x[i].style.left;
+						var new_placement = ((parseInt(placement.toString(), 10)) - 100).toString() + "%";
+						x[i].style.left = new_placement;
+
+					}
+				}
+
+				setTimeout(carousel_movement, 6000);
+			}
 
 			function carousel() {
 			var i;
