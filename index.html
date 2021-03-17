@@ -62,9 +62,9 @@
 					</header>
 
 					<div class="slideshow_container">
-						<img class="mySlides w3-animate-right" src="assets/images/texplicit_veryfirst_reduced_withoutcentercorr_gif.gif">
-						<img class="mySlides w3-animate-right" src="assets/images/bodhi_final_gif.gif">
-						<img class="mySlides w3-animate-right" src="assets/images/kuube_final_gif.gif">
+						<img class="mySlides w3-animate-right" id = "tex_slide" src="assets/images/texplicit_veryfirst_reduced_withoutcentercorr_gif.gif">
+						<img class="mySlides w3-animate-right" id = "bodhi_slide" src="assets/images/bodhi_final_gif.gif">
+						<img class="mySlides w3-animate-right" id = "kuube_slide" src="assets/images/kuube_final_gif.gif">
 
 							<div class="prev" style="width:20%" onclick="plusDivs(-1)">&#10094;</div>
 							<div class="next" style="width:20%" onclick="plusDivs(1)">&#10095;</div>
@@ -392,6 +392,7 @@
 
 			/*Automatic part*/
 			var slideIndex = 0;
+			var t_o;
 			carousel_initial_placement();
 			carousel_movement();
 
@@ -417,7 +418,7 @@
 					}
 				}
 
-				setTimeout(carousel_movement, 6000);
+				t_o = setTimeout(carousel_movement, 8000);
 			}
 
 			function carousel() {
@@ -429,7 +430,7 @@
 			slideIndex++;
 			if (slideIndex > x.length) {slideIndex = 1}
 			x[slideIndex-1].style.left = "0%";
-			setTimeout(carousel, 6000); // Change image every 2 seconds
+			setTimeout(carousel, 8000); // Change image every 2 seconds
 			}
 
 			/*Manual part*/
@@ -438,6 +439,8 @@
 			}
 
 			function showDivs(n) {
+			clearTimeout(t_o);
+			t_o = setTimeout(carousel_movement, 8000);
 			var i;
 			var x = document.getElementsByClassName("mySlides");
 			if (n > x.length) {slideIndex = 1}
