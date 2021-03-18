@@ -17,7 +17,6 @@ body {
 
 .is-preload {
     background-color: white;
-    background-image: url('../images/intro-bg5.jpg');
     margin: 0;
     width: 100%;
 }
@@ -87,7 +86,7 @@ li.navbarli a:hover {
 
 #header {
     text-align: center;
-    color: white;
+    color: darkslategray;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 150%;
     padding: 0 0 0 0;
@@ -112,12 +111,13 @@ li.navbarli a:hover {
     grid-row: 1;
     margin: 20% auto 20% auto;
     z-index: auto;
-    background-color: rgba(255, 255, 255, 0);
-    /*box-shadow: 0 0 40px 40px rgba(255,255,255,1);*/
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 40px 40px rgba(255,255,255,1);
 }
 
 #my_dataviz {
-    display: none;
+    width: auto;
+    display: grid;
     grid-column: 1;
     grid-row: 1;
 
@@ -135,10 +135,9 @@ li.navbarli a:hover {
     overflow: hidden;
 }
 .svg-content {
-    display: inline-block;
-    position: absolute;
-    top: 5%;
-    left: 0;
+    position: relative;
+    top: 0%;
+    left: 0%;
 }
 
 .downbutton {
@@ -524,13 +523,14 @@ a:hover {
 
         .is-preload {
             background-color: white;
-            background-image: url('../images/intro-bg5.jpg');
             margin: 0;
             width: 100%;
             position: absolute;
             top: 0;
             left: 0;
         }
+
+
 
         .column_portfolio {
             width: 80%;
@@ -567,8 +567,13 @@ a:hover {
             }
 
             #header{
+                width: 100%;
                 padding-top: 20%;
                 padding-bottom: 40%;
+            }
+
+            .major{
+                width: 100%;
             }
 
             .headertext {
@@ -578,8 +583,8 @@ a:hover {
                 grid-row: 1;
                 margin: 30% auto 30% auto;
                 z-index: auto;
-                background-color: rgba(255, 255, 255, 0);
-                box-shadow: 0 0 5px 5px rgba(255,255,255,0);
+                background-color: rgba(255, 255, 255, 1);
+                box-shadow: 0 0 5px 5px rgba(255,255,255,1);
             }
 
             
@@ -603,14 +608,14 @@ a:hover {
         .svg-content {
             display: inline-block;
             position: absolute;
-            width: 100%;
-            height: 100%;
+            width: 150%;
+            height: 150%;
             top: 0%;
-            left: 28%;
+            left: 10%;
         }
 
         .downbutton {
-            background-color: rgb(200,200,200,0.4);
+            background-color: darkslategray;
             width: 30%;
             margin: 12% auto;
             border: none;
