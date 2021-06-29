@@ -34,6 +34,7 @@ body {
 
 .overall .header{
     width: 100%;
+    padding: auto;
 }
 
 .overall .header .container{
@@ -44,6 +45,10 @@ body {
 
 .header .container .row .col-md-12{
     text-align: center;
+}
+
+.header .container .row:first-child .col-md-12{
+    padding-bottom: 10%;
 }
 
 .header .container .row .col-md-12 h1{
@@ -61,7 +66,8 @@ body {
 }
 
 .header .container .row .col-md-12 .header_image{
-    width: 319px;
+    width: 85%;
+    margin: auto;
     border: 4px solid #fad658;
     border-radius: 50%;
 }
@@ -78,8 +84,19 @@ section .container{
 }
 
 .uiux{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+.uiux .container .row .col-md-6 img{
+    width: 100%;
+    margin: auto;
 }
 
 .uiux .container .row .col-md-6 h2{
@@ -98,8 +115,19 @@ section .container{
 
 
 .ai{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+.ai .container .row .col-md-6 img{
+    width: 100%;
+    margin: auto;
 }
 
 .ai .container .row .col-md-6 h2{
@@ -118,8 +146,19 @@ section .container{
 
 
 .psych{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+.psych .container .row .col-md-6 img{
+    width: 100%;
+    margin: auto;
 }
 
 .psych .container .row .col-md-6 h2{
@@ -138,8 +177,19 @@ section .container{
 
 
 .voice{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+.voice .container .row .col-md-6 img{
+    width: 100%;
+    margin: auto;
 }
 
 .voice .container .row .col-md-6 h2{
@@ -158,8 +208,19 @@ section .container{
 
 
 .webdev{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+.webdev .container .row .col-md-6 img{
+    width: 100%;
+    margin: auto;
 }
 
 .webdev .container .row .col-md-6 h2{
@@ -178,8 +239,19 @@ section .container{
 
 
 .writing{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+.writing .container .row .col-md-6 img{
+    width: 100%;
+    margin: auto;
 }
 
 .writing .container .row .col-md-6 h2{
