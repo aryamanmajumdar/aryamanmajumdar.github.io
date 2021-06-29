@@ -76,6 +76,7 @@ body {
 
 section{
     border-bottom: 1px solid white;
+    margin-bottom: 0;
 }
 
 section .container{
@@ -498,7 +499,7 @@ section .container .row .col-sm-6 .products-btn .btn{
     .overall{
         background-image: linear-gradient(to bottom right, #092147, #072B5F);
         margin: auto;
-        width: 80%;
+        width: 100%;
         
     }
 
@@ -567,7 +568,7 @@ section .container .row .col-sm-6 .products-btn .btn{
     .overall{
         background-image: linear-gradient(to bottom right, #092147, #072B5F);
         margin: auto;
-        width: 80%;
+        width: 100%;
         
     }
 
@@ -636,7 +637,7 @@ section .container .row .col-sm-6 .products-btn .btn{
     .overall{
         background-image: linear-gradient(to bottom right, #092147, #072B5F);
         margin: auto;
-        width: 80%;
+        width: 100%;
         
     }
 
@@ -705,7 +706,7 @@ section .container .row .col-sm-6 .products-btn .btn{
     .overall{
         background-image: linear-gradient(to bottom right, #092147, #072B5F);
         margin: auto;
-        width: 80%;
+        width: 100%;
         
     }
 
@@ -774,7 +775,7 @@ section .container .row .col-sm-6 .products-btn .btn{
     .overall{
         background-image: linear-gradient(to bottom right, #092147, #072B5F);
         margin: auto;
-        width: 80%;
+        width: 100%;
         
     }
 
