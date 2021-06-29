@@ -59,7 +59,7 @@
 						
 						<div class="col-md-12">
 
-							<img class="header_image" src="./assets/images/me.jfif"></img>
+								<img class="header_image" src="./assets/images/me.jfif"></img>
 
 						</div>
 
@@ -69,7 +69,7 @@
 
 			</section>
 	
-			<section class="uiux">
+			<section class="uiux" id="objectofscroll">
 
 				<div class="container">
 
@@ -344,6 +344,12 @@
 
 		<script>
 
+				$(".header_image").click(function() {
+					$('html,body').animate({
+						scrollTop: $(".uiux").offset().top},
+						'slow');
+				});
+
 				$(".downbutton").click(function () {
                 $([document.documentElement, document.body]).animate({
                     scrollTop: $(".container_1").offset().top
@@ -367,207 +373,6 @@
                     scrollTop: $(".container_3").offset().top
                 }, 1300);
 			});
-
-
-
-			/*Array and counter declaration*/
-            var cars = ["AI/Computation", "Markets/Economics", "UI/UX", "Psychology"];
-			var current = 0;
-
-			function changeText() {
-                if (current == cars.length) {
-                    current = 0;
-                }
-
-
-                $('#changingtext').text(cars[current]);
-				current++;
-
-
-			}
-
-			/*Calling the text change function via setInterval function*/
-			setInterval(function () {
-				$("#changingtext").fadeOut("slow", function () { changeText(); });
-                $("#changingtext").fadeIn("slow");
-			},
-				2500);
-
-
-
-			/*d3*/
-			var width = screen.width - (screen.width/10),
-				height = 700;
-
-			if(screen.width > 768){
-				var svg = d3.select("#my_dataviz").append("svg")
-			.attr("viewBox", "0 0 1350 800")
-  			.attr("preserveAspectRatio", "xMinYMin meet")
-			.classed("svg-content", true);
-			}
-			else if ((screen.width >= 600) && (screen.width <= 768)){
-				var svg = d3.select("#my_dataviz").append("svg")
-			.attr("viewBox", "0 0 768 450")
-  			.attr("preserveAspectRatio", "xMinYMin meet")
-			.classed("svg-content", true);
-			}
-			else if (screen.width < 600){
-				var svg = d3.select("#my_dataviz").append("svg")
-			.attr("viewBox", "0 0 800 800")
-  			.attr("preserveAspectRatio", "xMinYMin meet")
-			.classed("svg-content", true);
-			}
-
-
-            var force = d3.layout.force()
-                .gravity(.05)
-                .distance(100)
-                .charge(-100)
-                .size([width, height]);
-			
-			function drawChart(){
-				d3.json("graphFile.json", function (json) {
-                force
-                    .nodes(json.nodes) 
-                    .links(json.links)
-                    .start();
-
-				var link = svg.selectAll(".link")
-					.data(json.links)
-					.enter().append("line")
-					.attr("class", "link")
-                    .style("stroke-width", function (d) { return Math.sqrt(d.weight); });
-
-				var node = svg.selectAll(".node")
-					.data(json.nodes)
-					.enter().append("g")
-					.attr("class", "node")
-					.call(force.drag)
-					.style("fill", function () {
-						return "hsl(" + Math.random() * 360 + ",100%,50%)";
-					});
-
-				node.append("circle")
-                    .attr("r", "7");
-
-                node.append("text")
-                    .attr("dx", 12)
-                    .attr("dy", ".35em")
-                    .text(function (d) { return d.name });
-
-                force.on("tick", function () {
-                    link.attr("x1", function (d) { return d.source.x; })
-                        .attr("y1", function (d) { return d.source.y; })
-                        .attr("x2", function (d) { return d.target.x; })
-                        .attr("y2", function (d) { return d.target.y; });
-
-                    node.attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; });
-				});
-
-
-			});
-			}
-
-			drawChart();
-			
-
-			/*make graph nodes constantly moving*/
-			setInterval(function () { force.alpha(0.1); }, 250);
-
-			/*Slideshow script*/
-
-			/*Automatic part*/
-			var slideIndex = 0;
-			var t_o;
-			carousel_initial_placement();
-			carousel_movement();
-
-			function carousel_initial_placement(){
-				var x = document.getElementsByClassName("mySlides");
-				for(i = 0; i < x.length; i++){
-					x[i].style.left = (i*100).toString() + "%";
-				}
-			}
-
-			function carousel_movement(){
-				var x = document.getElementsByClassName("mySlides");
-
-				if(x[x.length-1].style.left == "0%"){
-					carousel_initial_placement();
-				}
-				else{
-					for(i = 0; i < x.length; i++){
-						var placement = x[i].style.left;
-						var new_placement = ((parseInt(placement.toString(), 10)) - 100).toString() + "%";
-						x[i].style.left = new_placement;
-
-					}
-				}
-
-				t_o = setTimeout(carousel_movement, 8000);
-			}
-
-			function carousel() {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			for (i = 0; i < x.length; i++) {
-				x[i].style.left = "100%";
-			}
-			slideIndex++;
-			if (slideIndex > x.length) {slideIndex = 1}
-			x[slideIndex-1].style.left = "0%";
-			setTimeout(carousel, 8000); // Change image every 2 seconds
-			}
-
-			/*Manual part*/
-			function plusDivs(n) {
-			showDivs(slideIndex += n);
-			}
-
-			function showDivs(n) {
-			clearTimeout(t_o);
-			t_o = setTimeout(carousel_movement, 8000);
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			if (n > x.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = x.length} ;
-			for (i = 0; i < x.length; i++) {
-				x[i].style.left = "100%";
-			}
-			x[slideIndex-1].style.left = "0%";
-			}
-
-			/*Collapsible script*/
-			var coll = document.getElementsByClassName("collapsible");
-			var i;
-
-			for (i = 0; i < coll.length; i++) {
-			coll[i].addEventListener("click", function() {
-				this.classList.toggle("active");
-				var content = this.nextElementSibling;
-				if (content.style.display === "block") {
-				content.style.display = "none";
-				} else {
-				content.style.display = "block";
-				}
-
-				if (content.style.maxHeight){
-				content.style.maxHeight = null;
-				} else {
-				content.style.maxHeight = content.scrollHeight + "px";
-				}
-			});
-			}
-			
-
-			/*Sound script*/
-			$("audio").on("play", function() {
-    		var id = $(this).attr('id');
-
-    		$("audio").not(this).each(function(index, audio) {
-       		audio.pause();
-    		});
-});
 
 		</script>
 
