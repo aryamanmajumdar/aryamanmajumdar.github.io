@@ -81,12 +81,12 @@ body {
 
 
 section{
-    border-bottom: 1px solid white;
     margin-bottom: 0;
 }
 
-.header{
-    border-bottom: none;
+.arrow_section{
+    border-bottom: 1px solid white;
+    margin-bottom: 0;
 }
 
 section .container{
