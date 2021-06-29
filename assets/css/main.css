@@ -75,10 +75,18 @@ body {
     cursor: pointer;
 }
 
+.arrow_section{
+    display: none;
+}
+
 
 section{
     border-bottom: 1px solid white;
     margin-bottom: 0;
+}
+
+.header{
+    border-bottom: none;
 }
 
 section .container{
@@ -325,6 +333,34 @@ section .container .row .col-sm-6 .products-btn .btn{
         
     }
 
+    .arrow_section{
+        display: grid;
+        width: 100%;
+        padding: 10%;
+    }
+    
+    .arrow_section .container{
+        width: 100%;
+    }
+    
+    .arrow_section .container .row .col-md-12{
+        text-align: center;
+    }
+    
+    .arrow_section .container .row:first-child .col-md-12{
+        padding-bottom: 0;
+    }
+    
+    .arrow_section .container .row .col-md-12 .arrow_image{
+        width: 25%;
+        margin: auto;
+        border: 4px solid #fad658;
+        border-radius: 50%;
+        box-shadow: 0 30px 19px 0 rgb(4,23,50,0.6);
+    
+        cursor: pointer;
+    }
+
 
     .uiux .container .row .col-sm-6 img{
         width: 60%;
@@ -384,6 +420,34 @@ section .container .row .col-sm-6 .products-btn .btn{
         
     }
 
+    .arrow_section{
+        display: grid;
+        width: 100%;
+        padding: 10%;
+    }
+    
+    .arrow_section .container{
+        width: 100%;
+    }
+    
+    .arrow_section .container .row .col-md-12{
+        text-align: center;
+    }
+    
+    .arrow_section .container .row:first-child .col-md-12{
+        padding-bottom: 0;
+    }
+    
+    .arrow_section .container .row .col-md-12 .arrow_image{
+        width: 25%;
+        margin: auto;
+        border: 4px solid #fad658;
+        border-radius: 50%;
+        box-shadow: 0 30px 19px 0 rgb(4,23,50,0.6);
+    
+        cursor: pointer;
+    }
+
     .uiux .container .row .col-sm-6 img{
         width: 60%;
         margin: auto;
@@ -440,6 +504,34 @@ section .container .row .col-sm-6 .products-btn .btn{
         margin: auto;
         width: 80%;
         
+    }
+
+    .arrow_section{
+        display: grid;
+        width: 100%;
+        padding: 10%;
+    }
+    
+    .arrow_section .container{
+        width: 100%;
+    }
+    
+    .arrow_section .container .row .col-md-12{
+        text-align: center;
+    }
+    
+    .arrow_section .container .row:first-child .col-md-12{
+        padding-bottom: 0;
+    }
+    
+    .arrow_section .container .row .col-md-12 .arrow_image{
+        width: 25%;
+        margin: auto;
+        border: 4px solid #fad658;
+        border-radius: 50%;
+        box-shadow: 0 30px 19px 0 rgb(4,23,50,0.6);
+    
+        cursor: pointer;
     }
 
     .header .container .row .col-md-12 h1{
@@ -511,6 +603,34 @@ section .container .row .col-sm-6 .products-btn .btn{
         
     }
 
+    .arrow_section{
+        display: grid;
+        width: 100%;
+        padding: 10%;
+    }
+    
+    .arrow_section .container{
+        width: 100%;
+    }
+    
+    .arrow_section .container .row .col-md-12{
+        text-align: center;
+    }
+    
+    .arrow_section .container .row:first-child .col-md-12{
+        padding-bottom: 0;
+    }
+    
+    .arrow_section .container .row .col-md-12 .arrow_image{
+        width: 25%;
+        margin: auto;
+        border: 4px solid #fad658;
+        border-radius: 50%;
+        box-shadow: 0 30px 19px 0 rgb(4,23,50,0.6);
+    
+        cursor: pointer;
+    }
+
     .header .container .row .col-md-12 h1{
         font-family: lm;
         color: white;
@@ -578,6 +698,34 @@ section .container .row .col-sm-6 .products-btn .btn{
         margin: auto;
         width: 100%;
         
+    }
+
+    .arrow_section{
+        display: grid;
+        width: 100%;
+        padding: 10%;
+    }
+    
+    .arrow_section .container{
+        width: 100%;
+    }
+    
+    .arrow_section .container .row .col-md-12{
+        text-align: center;
+    }
+    
+    .arrow_section .container .row:first-child .col-md-12{
+        padding-bottom: 0;
+    }
+    
+    .arrow_section .container .row .col-md-12 .arrow_image{
+        width: 25%;
+        margin: auto;
+        border: 4px solid #fad658;
+        border-radius: 50%;
+        box-shadow: 0 30px 19px 0 rgb(4,23,50,0.6);
+    
+        cursor: pointer;
     }
 
     .header .container .row .col-md-12 h1{
@@ -649,6 +797,34 @@ section .container .row .col-sm-6 .products-btn .btn{
         
     }
 
+    .arrow_section{
+        display: grid;
+        width: 100%;
+        padding: 10%;
+    }
+    
+    .arrow_section .container{
+        width: 100%;
+    }
+    
+    .arrow_section .container .row .col-md-12{
+        text-align: center;
+    }
+    
+    .arrow_section .container .row:first-child .col-md-12{
+        padding-bottom: 0;
+    }
+    
+    .arrow_section .container .row .col-md-12 .arrow_image{
+        width: 25%;
+        margin: auto;
+        border: 4px solid #fad658;
+        border-radius: 50%;
+        box-shadow: 0 30px 19px 0 rgb(4,23,50,0.6);
+    
+        cursor: pointer;
+    }
+
     .header .container .row .col-md-12 h1{
         font-family: lm;
         color: white;
@@ -718,6 +894,34 @@ section .container .row .col-sm-6 .products-btn .btn{
         
     }
 
+    .arrow_section{
+        display: grid;
+        width: 100%;
+        padding: 10%;
+    }
+    
+    .arrow_section .container{
+        width: 100%;
+    }
+    
+    .arrow_section .container .row .col-md-12{
+        text-align: center;
+    }
+    
+    .arrow_section .container .row:first-child .col-md-12{
+        padding-bottom: 0;
+    }
+    
+    .arrow_section .container .row .col-md-12 .arrow_image{
+        width: 25%;
+        margin: auto;
+        border: 4px solid #fad658;
+        border-radius: 50%;
+        box-shadow: 0 30px 19px 0 rgb(4,23,50,0.6);
+    
+        cursor: pointer;
+    }
+
     .header .container .row .col-md-12 h1{
         font-family: lm;
         color: white;
@@ -785,6 +989,34 @@ section .container .row .col-sm-6 .products-btn .btn{
         margin: auto;
         width: 100%;
         
+    }
+
+    .arrow_section{
+        display: grid;
+        width: 100%;
+        padding: 10%;
+    }
+    
+    .arrow_section .container{
+        width: 100%;
+    }
+    
+    .arrow_section .container .row .col-md-12{
+        text-align: center;
+    }
+    
+    .arrow_section .container .row:first-child .col-md-12{
+        padding-bottom: 0;
+    }
+    
+    .arrow_section .container .row .col-md-12 .arrow_image{
+        width: 25%;
+        margin: auto;
+        border: 4px solid #fad658;
+        border-radius: 50%;
+        box-shadow: 0 30px 19px 0 rgb(4,23,50,0.6);
+    
+        cursor: pointer;
     }
 
     .overall .header .container .row:first-child .col-md-12 p{
