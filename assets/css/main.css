@@ -34,7 +34,7 @@ body {
 
 .overall .header{
     width: 100%;
-    padding: auto;
+    padding: 10%;
 }
 
 .overall .header .container{
@@ -75,9 +75,7 @@ body {
 
 
 section{
-    padding: 100px;
     border-bottom: 1px solid white;
-
 }
 
 section .container{
@@ -95,19 +93,19 @@ section .container{
     padding-bottom: 8%;
 }
 
-.uiux .container .row .col-md-6 img{
+.uiux .container .row .col-sm-6 img{
     width: 100%;
     margin: auto;
 }
 
-.uiux .container .row .col-md-6 h2{
+.uiux .container .row .col-sm-6 h2{
     font-family: rb;
     color: white;
     font-size: 25px;
     font-weight: 300;
 }
 
-.uiux .container .row .col-md-6 p{
+.uiux .container .row .col-sm-6 p{
     font-family: rb;
     color: white;
     font-size: 15px;
@@ -126,19 +124,19 @@ section .container{
     padding-bottom: 8%;
 }
 
-.ai .container .row .col-md-6 img{
+.ai .container .row .col-sm-6 img{
     width: 100%;
     margin: auto;
 }
 
-.ai .container .row .col-md-6 h2{
+.ai .container .row .col-sm-6 h2{
     font-family: rb;
     color: white;
     font-size: 25px;
     font-weight: 300;
 }
 
-.ai .container .row .col-md-6 p{
+.ai .container .row .col-sm-6 p{
     font-family: rb;
     color: white;
     font-size: 15px;
@@ -157,19 +155,19 @@ section .container{
     padding-bottom: 8%;
 }
 
-.psych .container .row .col-md-6 img{
+.psych .container .row .col-sm-6 img{
     width: 100%;
     margin: auto;
 }
 
-.psych .container .row .col-md-6 h2{
+.psych .container .row .col-sm-6 h2{
     font-family: rb;
     color: white;
     font-size: 25px;
     font-weight: 300;
 }
 
-.psych .container .row .col-md-6 p{
+.psych .container .row .col-sm-6 p{
     font-family: rb;
     color: white;
     font-size: 15px;
@@ -188,19 +186,19 @@ section .container{
     padding-bottom: 8%;
 }
 
-.voice .container .row .col-md-6 img{
+.voice .container .row .col-sm-6 img{
     width: 100%;
     margin: auto;
 }
 
-.voice .container .row .col-md-6 h2{
+.voice .container .row .col-sm-6 h2{
     font-family: rb;
     color: white;
     font-size: 25px;
     font-weight: 300;
 }
 
-.voice .container .row .col-md-6 p{
+.voice .container .row .col-sm-6 p{
     font-family: rb;
     color: white;
     font-size: 15px;
@@ -219,19 +217,19 @@ section .container{
     padding-bottom: 8%;
 }
 
-.webdev .container .row .col-md-6 img{
+.webdev .container .row .col-sm-6 img{
     width: 100%;
     margin: auto;
 }
 
-.webdev .container .row .col-md-6 h2{
+.webdev .container .row .col-sm-6 h2{
     font-family: rb;
     color: white;
     font-size: 25px;
     font-weight: 300;
 }
 
-.webdev .container .row .col-md-6 p{
+.webdev .container .row .col-sm-6 p{
     font-family: rb;
     color: white;
     font-size: 15px;
@@ -250,30 +248,30 @@ section .container{
     padding-bottom: 8%;
 }
 
-.writing .container .row .col-md-6 img{
+.writing .container .row .col-sm-6 img{
     width: 100%;
     margin: auto;
 }
 
-.writing .container .row .col-md-6 h2{
+.writing .container .row .col-sm-6 h2{
     font-family: rb;
     color: white;
     font-size: 25px;
     font-weight: 300;
 }
 
-.writing .container .row .col-md-6 p{
+.writing .container .row .col-sm-6 p{
     font-family: rb;
     color: white;
     font-size: 15px;
     font-weight: 100;
 }
 
-section .container .row .col-md-6 .products-btn{
+section .container .row .col-sm-6 .products-btn{
 
 }
 
-section .container .row .col-md-6 .products-btn .btn{
+section .container .row .col-sm-6 .products-btn .btn{
     font-family: rb;
     border-radius: 0px;
     font-size: 13px;
@@ -298,38 +296,537 @@ section .container .row .col-md-6 .products-btn .btn{
     
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .overall{
+        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        margin: auto;
+        width: 80%;
+        
+    }
     
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    .overall{
+        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        margin: auto;
+        width: 80%;
+        
+    }
+
+
+    .uiux .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .ai .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ai .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .psych .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .voice .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .voice .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .webdev .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .writing .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .writing .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
     
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+
+    .overall{
+        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    .uiux .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .ai .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ai .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .psych .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .voice .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .voice .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .webdev .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .writing .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .writing .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
     
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 450px) and (max-width: 499px) {
+
+    .overall{
+        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    .header .container .row .col-md-12 h1{
+        font-family: lm;
+        color: white;
+        font-size: 32px;
+        font-weight: 100;
+    }
+
+    .overall .header .container .row:first-child .col-md-12 p{
+        display: none;
+    }
+
+    .uiux .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .ai .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ai .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .psych .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .voice .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .voice .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .webdev .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .writing .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .writing .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
     
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 400px) and (max-width: 449px) {
+
+    .overall{
+        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    .header .container .row .col-md-12 h1{
+        font-family: lm;
+        color: white;
+        font-size: 28px;
+        font-weight: 100;
+    }
+
+    .overall .header .container .row:first-child .col-md-12 p{
+        display: none;
+    }
+
+    .uiux .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .ai .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ai .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .psych .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .voice .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .voice .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .webdev .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .writing .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .writing .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
     
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 350px) and (max-width: 399px) {
+
+    .overall{
+        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    .header .container .row .col-md-12 h1{
+        font-family: lm;
+        color: white;
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+    .overall .header .container .row:first-child .col-md-12 p{
+        display: none;
+    }
+
+    .uiux .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .ai .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ai .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .psych .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .voice .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .voice .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .webdev .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .writing .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .writing .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
     
 }
 
-@media only screen and (max-width: 350px){
+@media only screen and (min-width: 320px) and (max-width: 349px){
+
+    .overall{
+        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    .header .container .row .col-md-12 h1{
+        font-family: lm;
+        color: white;
+        font-size: 28px;
+        font-weight: 100;
+    }
+
+    .overall .header .container .row:first-child .col-md-12 p{
+        display: none;
+    }
+
+    .uiux .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .ai .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ai .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .psych .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .voice .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .voice .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .webdev .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .writing .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .writing .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
 
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (min-width: 250px) and (max-width: 319px) {
+
+    .overall{
+        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    .header .container .row .col-md-12 h1{
+        font-family: lm;
+        color: white;
+        font-size: 22px;
+        font-weight: 100;
+    }
+
+    .overall .header .container .row:first-child .col-md-12 p{
+        display: none;
+    }
+
+    .uiux .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .ai .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ai .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .psych .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .voice .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .voice .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .webdev .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .writing .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .writing .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
     
 }
 
-@media only screen and (max-width: 250px) {
+@media only screen and (min-width: 200px) and (max-width: 249px) {
+
+    .overall{
+        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    .overall .header .container .row:first-child .col-md-12 p{
+        display: none;
+    }
+
+    .uiux .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .ai .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ai .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .psych .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .voice .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .voice .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .webdev .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .writing .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .writing .container .row .col-sm-6 img{
+        width: 60%;
+        margin: auto;
+    }
     
 }
