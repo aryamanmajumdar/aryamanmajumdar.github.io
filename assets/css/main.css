@@ -81,10 +81,6 @@ body {
 
 
 section{
-    margin-bottom: 0;
-}
-
-.arrow_section{
     border-bottom: 1px solid white;
     margin-bottom: 0;
 }
@@ -333,6 +329,15 @@ section .container .row .col-sm-6 .products-btn .btn{
         
     }
 
+    section{
+        border-bottom: none;
+    }
+    
+    .arrow_section{
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
+    }
+
     .arrow_section{
         display: grid;
         width: 100%;
@@ -420,6 +425,15 @@ section .container .row .col-sm-6 .products-btn .btn{
         
     }
 
+    section{
+        border-bottom: none;
+    }
+    
+    .arrow_section{
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
+    }
+
     .arrow_section{
         display: grid;
         width: 100%;
@@ -504,6 +518,15 @@ section .container .row .col-sm-6 .products-btn .btn{
         margin: auto;
         width: 80%;
         
+    }
+
+    section{
+        border-bottom: none;
+    }
+    
+    .arrow_section{
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
     }
 
     .arrow_section{
@@ -603,6 +626,15 @@ section .container .row .col-sm-6 .products-btn .btn{
         
     }
 
+    section{
+        border-bottom: none;
+    }
+    
+    .arrow_section{
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
+    }
+
     .arrow_section{
         display: grid;
         width: 100%;
@@ -698,6 +730,15 @@ section .container .row .col-sm-6 .products-btn .btn{
         margin: auto;
         width: 100%;
         
+    }
+
+    section{
+        border-bottom: none;
+    }
+    
+    .arrow_section{
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
     }
 
     .arrow_section{
@@ -797,6 +838,15 @@ section .container .row .col-sm-6 .products-btn .btn{
         
     }
 
+    section{
+        border-bottom: none;
+    }
+    
+    .arrow_section{
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
+    }
+
     .arrow_section{
         display: grid;
         width: 100%;
@@ -894,6 +944,15 @@ section .container .row .col-sm-6 .products-btn .btn{
         
     }
 
+    section{
+        border-bottom: none;
+    }
+    
+    .arrow_section{
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
+    }
+
     .arrow_section{
         display: grid;
         width: 100%;
@@ -989,6 +1048,15 @@ section .container .row .col-sm-6 .products-btn .btn{
         margin: auto;
         width: 100%;
         
+    }
+
+    section{
+        border-bottom: none;
+    }
+    
+    .arrow_section{
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
     }
 
     .arrow_section{
