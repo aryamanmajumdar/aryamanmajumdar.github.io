@@ -78,7 +78,7 @@
 						
 						<div class="col-md-12">
 
-								<img class="arrow_image" src="./assets/images/arrow_section-arrow.gif"></img>
+								<img class="arrow_image" id="arrow_image_1" src="./assets/images/arrow_section-arrow.gif"></img>
 
 						</div>
 
@@ -143,7 +143,7 @@
 						
 						<div class="col-md-12">
 
-								<img class="arrow_image" src="./assets/images/arrow_section-arrow.gif"></img>
+								<img class="arrow_image" id="arrow_image_2" src="./assets/images/arrow_section-arrow.gif"></img>
 
 						</div>
 
@@ -206,7 +206,7 @@
 						
 						<div class="col-md-12">
 
-								<img class="arrow_image" src="./assets/images/arrow_section-arrow.gif"></img>
+								<img class="arrow_image" id="arrow_image_3" src="./assets/images/arrow_section-arrow.gif"></img>
 
 						</div>
 
@@ -276,7 +276,7 @@
 						
 						<div class="col-md-12">
 
-								<img class="arrow_image" src="./assets/images/arrow_section-arrow.gif"></img>
+								<img class="arrow_image" id="arrow_image_4" src="./assets/images/arrow_section-arrow.gif"></img>
 
 						</div>
 
@@ -337,7 +337,7 @@
 						
 						<div class="col-md-12">
 
-								<img class="arrow_image" src="./assets/images/arrow_section-arrow.gif"></img>
+								<img class="arrow_image" id="arrow_image_5" src="./assets/images/arrow_section-arrow.gif"></img>
 
 						</div>
 
@@ -400,7 +400,7 @@
 						
 						<div class="col-md-12">
 
-								<img class="arrow_image" src="./assets/images/arrow_section-arrow.gif"></img>
+								<img class="arrow_image" id="arrow_image_6" src="./assets/images/arrow_section-arrow.gif"></img>
 
 						</div>
 
@@ -464,9 +464,39 @@
 						'slow');
 				});
 
-				$(".arrow_image").click(function() {
+				$("#arrow_image_1").click(function() {
 					$('html,body').animate({
 						scrollTop: $(".uiux").offset().top},
+						'slow');
+				});
+
+				$("#arrow_image_2").click(function() {
+					$('html,body').animate({
+						scrollTop: $(".ai").offset().top},
+						'slow');
+				});
+
+				$("#arrow_image_3").click(function() {
+					$('html,body').animate({
+						scrollTop: $(".psych").offset().top},
+						'slow');
+				});
+
+				$("#arrow_image_4").click(function() {
+					$('html,body').animate({
+						scrollTop: $(".voice").offset().top},
+						'slow');
+				});
+
+				$("#arrow_image_5").click(function() {
+					$('html,body').animate({
+						scrollTop: $(".webdev").offset().top},
+						'slow');
+				});
+
+				$("#arrow_image_6").click(function() {
+					$('html,body').animate({
+						scrollTop: $(".writing").offset().top},
 						'slow');
 				});
 
