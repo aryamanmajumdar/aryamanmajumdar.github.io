@@ -82,7 +82,6 @@ body {
 
 section{
     border-bottom: 1px solid white;
-    margin-bottom: 0;
 }
 
 section .container{
@@ -251,7 +250,7 @@ section .container{
 
 .writing{
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 0;
 
     padding-left: 5%;
     padding-right: 5%;
@@ -280,9 +279,6 @@ section .container{
     margin-bottom: 12%;
 }
 
-section .container .row .col-sm-6 .products-btn{
-
-}
 
 section .container .row .col-sm-6 .products-btn .btn{
     font-family: rb;
