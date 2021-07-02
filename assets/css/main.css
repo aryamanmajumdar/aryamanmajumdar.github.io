@@ -1,3 +1,13 @@
+canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+  }
+  
 body {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -25,11 +35,13 @@ body {
     src: url('/assets/fonts/Roboto-Regular.ttf');
 }
 
+
 .overall{
-    background-image: linear-gradient(to bottom right, #092147, #072B5F);
+    /*background-image: linear-gradient(to bottom right, #092147, #072B5F);*/
+    background-color: rgb(10,34,72);
+    box-shadow: 0 0 40px 40px rgb(10,34,72);
     margin: auto;
     width: 45%;
-    
 }
 
 .overall .header{
@@ -87,6 +99,7 @@ section{
 section .container{
     width: 100%;
 }
+
 
 .uiux{
     margin-top: 5%;
@@ -289,8 +302,6 @@ section .container .row .col-sm-6 .products-btn .btn{
     padding: 7px 16px;
     position: relative;
     background-color: #ffce1b;
-    -webkit-box-shadow: 0px 28px 22px #070877 !important;
-    box-shadow: 0px 38px 53px #070877 !important
     
 }
 
@@ -308,7 +319,9 @@ section .container .row .col-sm-6 .products-btn .btn{
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 
     .overall{
-        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        /*background-image: linear-gradient(to bottom right, #092147, #072B5F);*/
+        background-color: rgb(10,34,72);
+        box-shadow: 0 0 40px 40px rgb(10,34,72);
         margin: auto;
         width: 80%;
         
@@ -319,7 +332,9 @@ section .container .row .col-sm-6 .products-btn .btn{
 @media only screen and (min-width: 600px) and (max-width: 767px) {
 
     .overall{
-        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        /*background-image: linear-gradient(to bottom right, #092147, #072B5F);*/
+        background-color: rgb(10,34,72);
+        box-shadow: 0 0 40px 40px rgb(10,34,72);
         margin: auto;
         width: 80%;
         
@@ -415,7 +430,9 @@ section .container .row .col-sm-6 .products-btn .btn{
 @media only screen and (min-width: 500px) and (max-width: 599px) {
 
     .overall{
-        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        /*background-image: linear-gradient(to bottom right, #092147, #072B5F);*/
+        background-color: rgb(10,34,72);
+        box-shadow: 0 0 40px 40px rgb(10,34,72);
         margin: auto;
         width: 80%;
         
@@ -510,7 +527,9 @@ section .container .row .col-sm-6 .products-btn .btn{
 @media only screen and (min-width: 450px) and (max-width: 499px) {
 
     .overall{
-        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        /*background-image: linear-gradient(to bottom right, #092147, #072B5F);*/
+        background-color: rgb(10,34,72);
+        box-shadow: 0 0 40px 40px rgb(10,34,72);
         margin: auto;
         width: 80%;
         
@@ -616,9 +635,11 @@ section .container .row .col-sm-6 .products-btn .btn{
 @media only screen and (min-width: 400px) and (max-width: 449px) {
 
     .overall{
-        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        /*background-image: linear-gradient(to bottom right, #092147, #072B5F);*/
+        background-color: rgb(10,34,72);
+        box-shadow: 0 0 40px 40px rgb(10,34,72);
         margin: auto;
-        width: 100%;
+        width: 80%;
         
     }
 
@@ -722,9 +743,11 @@ section .container .row .col-sm-6 .products-btn .btn{
 @media only screen and (min-width: 350px) and (max-width: 399px) {
 
     .overall{
-        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        /*background-image: linear-gradient(to bottom right, #092147, #072B5F);*/
+        background-color: rgb(10,34,72);
+        box-shadow: 0 0 40px 40px rgb(10,34,72);
         margin: auto;
-        width: 100%;
+        width: 80%;
         
     }
 
@@ -828,9 +851,11 @@ section .container .row .col-sm-6 .products-btn .btn{
 @media only screen and (min-width: 320px) and (max-width: 349px){
 
     .overall{
-        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        /*background-image: linear-gradient(to bottom right, #092147, #072B5F);*/
+        background-color: rgb(10,34,72);
+        box-shadow: 0 0 40px 40px rgb(10,34,72);
         margin: auto;
-        width: 100%;
+        width: 80%;
         
     }
 
@@ -934,9 +959,11 @@ section .container .row .col-sm-6 .products-btn .btn{
 @media only screen and (min-width: 250px) and (max-width: 319px) {
 
     .overall{
-        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        /*background-image: linear-gradient(to bottom right, #092147, #072B5F);*/
+        background-color: rgb(10,34,72);
+        box-shadow: 0 0 40px 40px rgb(10,34,72);
         margin: auto;
-        width: 100%;
+        width: 80%;
         
     }
 
@@ -1040,9 +1067,11 @@ section .container .row .col-sm-6 .products-btn .btn{
 @media only screen and (min-width: 200px) and (max-width: 249px) {
 
     .overall{
-        background-image: linear-gradient(to bottom right, #092147, #072B5F);
+        /*background-image: linear-gradient(to bottom right, #092147, #072B5F);*/
+        background-color: rgb(10,34,72);
+        box-shadow: 0 0 40px 40px rgb(10,34,72);
         margin: auto;
-        width: 100%;
+        width: 80%;
         
     }
 
