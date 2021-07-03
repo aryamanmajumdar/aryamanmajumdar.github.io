@@ -1,7 +1,6 @@
 import '../css/main.css';
 
 import * as THREE from 'https://unpkg.com/three/build/three.module.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 // Setup
 
