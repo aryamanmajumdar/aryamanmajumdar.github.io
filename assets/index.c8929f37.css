@@ -260,6 +260,10 @@ margin:auto}
 .webdev .container .row .col-sm-6 img{width:60%;
 margin:auto}
 
+.webdev .container .row{display:flex;
+flex-direction: column-reverse;
+}
+
 .writing .container .row{display:flex;
 flex-direction:column-reverse}
 
@@ -312,6 +316,10 @@ flex-direction:column-reverse}
 
 .voice .container .row .col-sm-6 img{width:60%;
 margin:auto}
+
+.webdev .container .row{display:flex;
+    flex-direction: column-reverse;
+}
 
 .webdev .container .row .col-sm-6 img{width:60%;
 margin:auto}
@@ -375,6 +383,10 @@ flex-direction:column-reverse}
 
 .voice .container .row .col-sm-6 img{width:60%;
 margin:auto}
+
+.webdev .container .row{display:flex;
+    flex-direction: column-reverse;
+}
 
 .webdev .container .row .col-sm-6 img{width:60%;
 margin:auto}
@@ -450,6 +462,10 @@ flex-direction:column-reverse}
 .voice .container .row .col-sm-6 img{width:60%;
 margin:auto}
 
+.webdev .container .row{display:flex;
+    flex-direction: column-reverse;
+}
+
 .webdev .container .row .col-sm-6 img{width:60%;
 margin:auto}
 
@@ -522,6 +538,10 @@ flex-direction:column-reverse}
 
 .voice .container .row .col-sm-6 img{width:60%;
 margin:auto}
+
+.webdev .container .row{display:flex;
+    flex-direction: column-reverse;
+}
 
 .webdev .container .row .col-sm-6 img{width:60%;
 margin:auto}
@@ -596,6 +616,10 @@ flex-direction:column-reverse}
 .voice .container .row .col-sm-6 img{width:60%;
 margin:auto}
 
+.webdev .container .row{display:flex;
+    flex-direction: column-reverse;
+}
+
 .webdev .container .row .col-sm-6 img{width:60%;
 margin:auto}
 
@@ -669,6 +693,10 @@ flex-direction:column-reverse}
 .voice .container .row .col-sm-6 img{width:60%;
 margin:auto}
 
+.webdev .container .row{display:flex;
+    flex-direction: column-reverse;
+}
+
 .webdev .container .row .col-sm-6 img{width:60%;
 margin:auto}
 
@@ -736,6 +764,10 @@ flex-direction:column-reverse}
 
 .voice .container .row .col-sm-6 img{width:60%;
 margin:auto}
+
+.webdev .container .row{display:flex;
+    flex-direction: column-reverse;
+}
 
 .webdev .container .row .col-sm-6 img{width:60%;
 margin:auto}
