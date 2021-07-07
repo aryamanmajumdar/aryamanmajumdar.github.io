@@ -76,6 +76,9 @@ moveCamera();
 function animate() {
   requestAnimationFrame(animate);
 
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
   // controls.update();
 
   renderer.render(scene, camera);
