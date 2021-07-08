@@ -26,6 +26,17 @@ animation-fill-mode:forwards}
     src:url(Roboto-Regular.b2efabca.ttf);
 }
 
+@font-face{
+    font-family:rw;
+    src:url(Raleway-Light.ttf);
+}
+
+@font-face{
+    font-family:rwm;
+    src:url(Raleway-Medium.ttf);
+}
+
+
 .overall{
     background-color:#0a2248;
     box-shadow:0 0 40px 40px #0a2248;
@@ -52,7 +63,7 @@ font-weight:100;
 margin-top:0;
 }
 
-.header .container .row .col-md-12 p{font-family:rb;
+.header .container .row .col-md-12 p{font-family:rw;
 color:#fff;
 font-size:15px;
 font-weight:100}
@@ -62,11 +73,16 @@ margin:auto;
 border:4px solid #fad658;
 border-radius:50%;
 box-shadow:0 30px 19px 0 rgb(4,23,50,.6);
-cursor:pointer}
+cursor:pointer;
+}
 
-.arrow_section{display:none}
+.arrow_section{
+    display:none;
+}
 
-section{border-bottom:1px solid #fff}
+section{
+    border-bottom:1px solid #fff;
+}
 
 section .container{width:100%}
 
@@ -80,12 +96,12 @@ padding-bottom:8%}
 .uiux .container .row .col-sm-6 img{width:100%;
 margin:auto}
 
-.uiux .container .row .col-sm-6 h2{font-family:rb;
+.uiux .container .row .col-sm-6 h2{font-family:rwm;
 color:#fff;
 font-size:25px;
 font-weight:300}
 
-.uiux .container .row .col-sm-6 p{font-family:rb;
+.uiux .container .row .col-sm-6 p{font-family:rw;
 color:#fff;
 font-size:15px;
 font-weight:100;
@@ -101,12 +117,12 @@ padding-bottom:8%}
 .ai .container .row .col-sm-6 img{width:100%;
 margin:auto}
 
-.ai .container .row .col-sm-6 h2{font-family:rb;
+.ai .container .row .col-sm-6 h2{font-family:rwm;
 color:#fff;
 font-size:25px;
 font-weight:300}
 
-.ai .container .row .col-sm-6 p{font-family:rb;
+.ai .container .row .col-sm-6 p{font-family:rw;
 color:#fff;
 font-size:15px;
 font-weight:100;
@@ -122,12 +138,12 @@ padding-bottom:8%}
 .psych .container .row .col-sm-6 img{width:100%;
 margin:auto}
 
-.psych .container .row .col-sm-6 h2{font-family:rb;
+.psych .container .row .col-sm-6 h2{font-family:rwm;
 color:#fff;
 font-size:25px;
 font-weight:300}
 
-.psych .container .row .col-sm-6 p{font-family:rb;
+.psych .container .row .col-sm-6 p{font-family:rw;
 color:#fff;
 font-size:15px;
 font-weight:100;
@@ -143,12 +159,12 @@ padding-bottom:8%}
 .voice .container .row .col-sm-6 img{width:100%;
 margin:auto}
 
-.voice .container .row .col-sm-6 h2{font-family:rb;
+.voice .container .row .col-sm-6 h2{font-family:rwm;
 color:#fff;
 font-size:25px;
 font-weight:300}
 
-.voice .container .row .col-sm-6 p{font-family:rb;
+.voice .container .row .col-sm-6 p{font-family:rw;
 color:#fff;
 font-size:15px;
 font-weight:100;
@@ -164,12 +180,12 @@ padding-bottom:8%}
 .webdev .container .row .col-sm-6 img{width:100%;
 margin:auto}
 
-.webdev .container .row .col-sm-6 h2{font-family:rb;
+.webdev .container .row .col-sm-6 h2{font-family:rwm;
 color:#fff;
 font-size:25px;
 font-weight:300}
 
-.webdev .container .row .col-sm-6 p{font-family:rb;
+.webdev .container .row .col-sm-6 p{font-family:rw;
 color:#fff;
 font-size:15px;
 font-weight:100;
@@ -185,18 +201,18 @@ padding-bottom:8%}
 .writing .container .row .col-sm-6 img{width:100%;
 margin:auto}
 
-.writing .container .row .col-sm-6 h2{font-family:rb;
+.writing .container .row .col-sm-6 h2{font-family:rwm;
 color:#fff;
 font-size:25px;
 font-weight:300}
 
-.writing .container .row .col-sm-6 p{font-family:rb;
+.writing .container .row .col-sm-6 p{font-family:rw;
 color:#fff;
 font-size:15px;
 font-weight:100;
 margin-bottom:12%}
 
-section .container .row .col-sm-6 .products-btn .btn{font-family:rb;
+section .container .row .col-sm-6 .products-btn .btn{font-family:rwm;
 border-radius:0;
 font-size:13px;
 font-weight:600;
