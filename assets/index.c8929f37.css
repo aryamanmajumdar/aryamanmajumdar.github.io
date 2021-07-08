@@ -431,6 +431,11 @@ font-weight:100;
 margin-top:8%;
 }
 
+.header .container .row:last-child .col-md-12{
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
 section{border-bottom:none}
 
 .arrow_section{border-bottom:1px solid #fff;
